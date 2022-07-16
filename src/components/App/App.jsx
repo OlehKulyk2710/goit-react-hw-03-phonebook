@@ -64,7 +64,7 @@ class App extends Component {
           filter={filter}
           onDeleteContact={this.deleteContact}
         />
-        {error && <p>{error}</p>}
+        {error && <p>Hello</p>}
       </div>
     );
   }
