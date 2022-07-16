@@ -2,9 +2,7 @@ import PropTypes from 'prop-types';
 import ContactItem from 'components/ContactItem/ContactItem';
 
 const ContactList = ({ contacts, filter, onDeleteContact }) => {
-  if (contacts.length === 0) {
-    return;
-  }
+  console.log(contacts);
 
   const normalizedFilter = filter.toLowerCase();
   const contactsByFilter = contacts.filter(({ name }) =>

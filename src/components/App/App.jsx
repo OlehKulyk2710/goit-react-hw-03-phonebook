@@ -16,7 +16,7 @@ class App extends Component {
   componentDidMount() {
     try {
       const dataFromLocStorage = JSON.parse(localStorage.getItem(LC_KEY));
-      this.setState({ contacts: dataFromLocStorage });
+      dataFromLocStorage && this.setState({ contacts: dataFromLocStorage });
     } catch (error) {
       this.setState({ error: 'LocalStorage is corrupted :(' });
     }
